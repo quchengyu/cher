@@ -1,0 +1,78 @@
+Enter file contents class Rectangle//定义一个矩形类
+
+{
+
+    double width, length;//定义两个整形变量width,length;
+
+    Rectangle(){width=1;length=1;}//无参的构造函数
+
+    Rectangle(double z,double w)//z、w表示矩形的长和宽
+
+    {
+
+    width=z;
+
+    length=w;//将z,w分别赋值给width,length
+
+    }
+
+       
+
+    public double getArea()//创建getArea（）方法
+
+    {
+
+   
+
+     return width*length;
+
+   
+
+    }
+
+    public double getPerimeter()//创建getPerimeter()方法
+
+    {
+
+        double p;
+
+    p=width*2+length*2;
+
+    return p;
+
+    }
+
+    void display()//矩形类的display()方法
+
+    {      
+
+        System.out.println("矩形长="+width+"宽="+length+"面积="+this.getArea()+"周长="+this.getPerimeter());//输出矩形上一个点的坐标，矩形的长和宽   
+
+    }
+
+}
+
+ 
+
+   
+
+public class TestRectangle {
+
+   
+
+    public static void main(String args[])
+
+    {
+
+        Rectangle r1= new Rectangle(4,40);//为参数创建了一个矩形的对象，并赋值给引用
+
+        r1.display();//对象r1调用display()方法
+
+        Rectangle r2= new Rectangle(3.5,35.9);
+
+        r2.display();//对象r2调用display()方法
+
+    }
+
+}//201303014044计科高职13-2曲承玉
+here
